@@ -27,9 +27,9 @@ Console.WriteLine();
 //var calculator4new2 = new Calculator4newMaks2();
 //calculator4new2.GetMessage();
 var calculator5 = new Calculator5();
-calculator5.GetMessage();
-calculator5.GetMessage();
-calculator5.GetMessage();
+calculator5.CalculateForUserInput();
+calculator5.CalculateForUserInput();
+calculator5.CalculateForUserInput();
 
 
 
