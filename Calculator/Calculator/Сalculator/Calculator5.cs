@@ -130,7 +130,9 @@ namespace Calculator.Сalculator
             string result = "";
             while(result==string.Empty)
             {
+                //индекс первого вхождения обратной скобки в строку 
                 int indexFirstParantheses = expression.IndexOf(')');
+                //производится обработка выражения, в котором уже нету скобок 
                 if (indexFirstParantheses == -1)
                 {
                     GetListOperatorsAndValues(expression, out listOperators, out listNumbers);
@@ -139,16 +141,24 @@ namespace Calculator.Сalculator
                 else if (indexFirstParantheses != -1)
                 {
                     //-3 так как длина строки в скобках минимум будет равна 3 элементам в идеальних условиях
-                    for (int i = indexFirstParantheses-4; i > -1; i--)
+                    //происходит поиск отыетной скобки "("
+                    for (int i = indexFirstParantheses - 4; i > -1; i--)
                     {
                         if (expression[i] == '(')
                         {
+                            //переменная, которая сохраняет в себя подстроку содержащую выражение внутри скобки
                             string expressionInParentheses = expression.Substring(i + 1, indexFirstParantheses - i - 1);
+                            //возвращаем листы операторов и чисел из выделенной строки
                             GetListOperatorsAndValues(expressionInParentheses, out listOperators, out listNumbers);
+                            //получаем результат обработки листов
                             var resultExpressionInParentheses = GetResultExpressionInParentheses(listOperators, listNumbers);
-                            expression = expression.Remove(i, indexFirstParantheses-i+1);
+                            //удалем подстроку, которую обработали вместе со скобками, в которые она была заключена
+                            expression = expression.Remove(i, indexFirstParantheses - i + 1);
+                            //вставляяем, в мето удаленной строки результ полученный выше
                             expression = expression.Insert(i, resultExpressionInParentheses);
-                            indexFirstParantheses=expression.IndexOf(')');
+                            //обновляем индекс первого вхождения обратной скобки в строку ")"
+                            indexFirstParantheses = expression.IndexOf(')');
+                            //обновляем индекс для поиска ответной скобки "("
                             i = indexFirstParantheses - 4;
                         }
                     }

@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\OlegatorWork\\.nuget\\packages\\": {}
+    "C:\\Users\\olegator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\OlegatorWork\\source\\repos\\Calculator\\Calculator\\Calculator.csproj",
+      "projectUniqueName": "C:\\Users\\olegator\\Documents\\GitHub\\Calculator\\Calculator\\Calculator\\Calculator.csproj",
       "projectName": "Calculator",
-      "projectPath": "C:\\Users\\OlegatorWork\\source\\repos\\Calculator\\Calculator\\Calculator.csproj",
-      "packagesPath": "C:\\Users\\OlegatorWork\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\OlegatorWork\\source\\repos\\Calculator\\Calculator\\obj\\",
+      "projectPath": "C:\\Users\\olegator\\Documents\\GitHub\\Calculator\\Calculator\\Calculator\\Calculator.csproj",
+      "packagesPath": "C:\\Users\\olegator\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\olegator\\Documents\\GitHub\\Calculator\\Calculator\\Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\OlegatorWork\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\olegator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
