@@ -169,13 +169,13 @@ namespace Calculator.Сalculator
         {
             CheckingEmpty(expression);
             var storage = new StorageNumbersAndOperators();
-            string result = "";
+            var result = "";
             while(result==string.Empty)
             {
                 ///<summary>
                 ///индекс первого вхождения обратной скобки ")" в строку 
                 /// </summary>
-                int indexFirstParantheses = expression.IndexOf(')');
+                var indexFirstParantheses = expression.IndexOf(')');
                 ///<summary>
                 ///производится обработка выражения, в котором уже нету скобок 
                 /// </summary>
@@ -190,7 +190,7 @@ namespace Calculator.Сalculator
                     ///-4 так как длина строки в скобках минимум будет равна 3 элементам в идеальних условиях
                     ///происходит поиск ответной скобки "("
                     /// </summary>
-                    for (int i = indexFirstParantheses - 4; i > -1; i--)
+                    for (var i = indexFirstParantheses - 4; i > -1; i--)
                     {
                         if (expression[i] == '(')
                         {
